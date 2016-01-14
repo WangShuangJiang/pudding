@@ -48,7 +48,11 @@
  */
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
-    [super pushViewController:viewController animated:animated];
+
+    if (self.viewControllers.count > 0) {
+        // 如果现在push的不是栈底控制器(最先push进来的那个控制器)
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
     
     UIButton *userBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     
@@ -58,6 +62,8 @@
     [userBtn setFrame:CGRectMake(0, 0, 25, 25)];
     viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:userBtn];
    
+    [super pushViewController:viewController animated:animated];
+    
 }
 
 @end

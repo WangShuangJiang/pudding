@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class XinFanModel;
 @interface AnimationDetailViewController : UIViewController
+
+/**
+ *  动画详情的模型
+ */
+@property (strong , nonatomic) XinFanModel *animation;
 
 @end

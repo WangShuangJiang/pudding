@@ -32,7 +32,9 @@
  *  动画的ID
  */
 @property (nonatomic, copy) NSString *_id;
-
+/**
+ *  动画简介
+ */
 @property (nonatomic, copy) NSString *intro;
 
 /**
@@ -57,18 +59,28 @@
 
 @property (nonatomic, strong) NSArray *aliases;
 
+/**
+ *  声优标签
+ */
 @property (nonatomic, strong) NSArray *seiyuNames;
 
 @property (nonatomic, assign) BOOL isEpCollection;
-
+/**
+ *  更新时间
+ */
 @property (nonatomic, assign) NSInteger relatedVideoTopicCount;
 
 @property (nonatomic, strong) NSArray *relatedTags;
-
+/**
+ *  更新时间
+ */
 @property (nonatomic, copy) NSString *onairRuleDescription;
 
 @property (nonatomic, strong) NSArray *studios;
 
+/**
+ *  看点标签
+ */
 @property (nonatomic, strong) NSArray *categoryNames;
 
 @property (nonatomic, assign) NSInteger totalEpCount;

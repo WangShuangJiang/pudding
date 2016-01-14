@@ -6,36 +6,35 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C8AFAD4D-93A0-4178-A864-C8004E24B4D1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>pudding</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>d3b33442-203a-4b98-a023-85834f8d8bd5++1585</key>
-		<string>http://192.168.88.8/qfproj/teachers/oyangjian/%25E7%2588%25B1%25E9%2599%2590%25E5%2585%258D/trunk/MMProgressHUD</string>
+		<key>2E45E4E4B2CCEC644DDCBB9C3BC9CF6A757371E6</key>
+		<string>https://github.com/WangShuangJiang/pudding.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>pudding.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>d3b33442-203a-4b98-a023-85834f8d8bd5++1585</key>
-		<string>MMProgressHUD/</string>
-	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>d3b33442-203a-4b98-a023-85834f8d8bd5++1585</key>
-		<string>http://192.168.88.8/qfproj</string>
+		<key>2E45E4E4B2CCEC644DDCBB9C3BC9CF6A757371E6</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>http://192.168.88.8/qfproj/teachers/oyangjian/%25E7%2588%25B1%25E9%2599%2590%25E5%2585%258D/trunk/MMProgressHUD</string>
+	<string>https://github.com/WangShuangJiang/pudding.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>d3b33442-203a-4b98-a023-85834f8d8bd5++1585</string>
+	<string>2E45E4E4B2CCEC644DDCBB9C3BC9CF6A757371E6</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
+			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>d3b33442-203a-4b98-a023-85834f8d8bd5++1585</string>
+			<string>2E45E4E4B2CCEC644DDCBB9C3BC9CF6A757371E6</string>
 			<key>IDESourceControlWCCName</key>
-			<string>MMProgressHUD</string>
+			<string>pudding</string>
 		</dict>
 	</array>
 </dict>

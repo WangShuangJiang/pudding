@@ -249,9 +249,7 @@
         for (NSInteger index = 0; index < array.count; index++) {
             
             NSDictionary *dic = [array objectAtIndex:index];
-            
-            NSLog(@"%@",dic);
-            
+
             NSDictionary *animeDic = [dic objectForKey:@"anime"];
          
             XinFanModel *xinFan = [[XinFanModel alloc]init];
@@ -372,13 +370,21 @@
     //设置返回数据类型
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-    NSString *animationDetailURLString = [NSString stringWithFormat:kAnimation_Detaile_URL,animationID];
+    NSString *animationDetailURLString = [NSString stringWithFormat:kAnimation_Detaile_URL,animationID,kTureParam];
     
     [manager GET:animationDetailURLString parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers error:nil];
+        NSDictionary *animationDic = [dic objectForKey:@"anime"];
+        XinFanModel *xinFan = [[XinFanModel alloc]init];
+        [xinFan setValuesForKeysWithDictionary:animationDic];
+       
+        AnimationDetailViewController *animationVC = [[AnimationDetailViewController alloc]init];
         
-        NSLog(@"%@",dic);
+        animationVC.animation = xinFan;
+        
+        [self.navigationController pushViewController:animationVC animated:YES];
+        
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"失败");

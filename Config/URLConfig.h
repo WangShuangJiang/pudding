@@ -40,6 +40,6 @@
  */
 #define kClassify_URL @"http://pudding.cc/api/v2/ep_category?"
 
-#define kAnimation_Detaile_URL @"http://pudding.cc/api/v1/user_anime/%@?"
+#define kAnimation_Detaile_URL @"http://pudding.cc/api/v1/user_anime/%@?%@"
 
 #endif
