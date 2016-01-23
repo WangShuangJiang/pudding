@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class YRSideViewController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong,nonatomic) YRSideViewController *sideViewController;
 
 
 @end

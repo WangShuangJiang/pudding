@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "SJTabBarViewController.h"
 #import "MainViewController.h"
+#import "YRSideViewController.h"
+#import "SJLoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,7 +24,20 @@
     _window.backgroundColor =  [UIColor whiteColor];
     [_window makeKeyAndVisible];
     
-    _window.rootViewController = [[SJTabBarViewController alloc]init];
+    //滑动视图控制器
+    _sideViewController = [[YRSideViewController alloc]init];
+    //主界面视图
+    SJTabBarViewController *sjTabVC = [[SJTabBarViewController alloc]init];
+    //设置滑动视图的主视图
+    _sideViewController.rootViewController = sjTabVC;
+    
+    //左视图
+    SJLoginViewController *loginVC = [[SJLoginViewController alloc]init];
+    _sideViewController.leftViewController = loginVC;
+    
+    _sideViewController.needSwipeShowMenu = YES;//默认开启的可滑动展示
+    _sideViewController.showBoundsShadow = YES;
+    _window.rootViewController = _sideViewController;
     
     return YES;
 }
